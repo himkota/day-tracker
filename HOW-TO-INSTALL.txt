@@ -1,0 +1,44 @@
+DAY TRACKER — PWA INSTALL GUIDE
+================================
+
+STEP 1: Host the files
+You need to serve these files from a web server.
+The easiest free options:
+
+  OPTION A — GitHub Pages (recommended, free, permanent URL)
+  1. Create a free account at github.com
+  2. Create a new repository called "day-tracker"
+  3. Upload all files in this folder to the repo
+  4. Go to Settings → Pages → Source: main branch → Save
+  5. Your app URL will be: https://YOUR-USERNAME.github.io/day-tracker
+
+  OPTION B — Netlify Drop (fastest, no account needed)
+  1. Go to app.netlify.com/drop
+  2. Drag the entire "day-tracker-pwa" folder onto the page
+  3. Get an instant URL like: https://random-name.netlify.app
+
+  OPTION C — Any web host you already use
+
+STEP 2: Install on Android
+1. Open Chrome on your Android phone
+2. Go to your app URL from Step 1
+3. Tap the 3-dot menu (⋮) → "Add to Home screen"
+4. Tap "Add" — the app icon appears on your home screen
+5. Open it — it runs fullscreen like a native app!
+
+IMPORTANT: Your data is stored in the browser's localStorage.
+Use the "Export backup" button regularly to save a .txt backup file.
+If you clear Chrome's data/cache, your data will be lost unless backed up.
+
+STEP 3: Keep data in sync (optional)
+Since localStorage is per-browser, your phone and desktop won't 
+automatically share data. To sync:
+- Export backup on one device
+- Import backup on the other device
+
+FILES IN THIS PACKAGE:
+  index.html    — The main app
+  manifest.json — PWA configuration
+  sw.js         — Service worker (offline support)
+  icon-192.png  — App icon (small)
+  icon-512.png  — App icon (large)
